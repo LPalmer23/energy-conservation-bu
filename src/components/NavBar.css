@@ -97,7 +97,7 @@
   left: 0;
   bottom: 0;
   width: 0%;
-  height: 2px;
+  height: 1px;
   background-color: #000;
   transition: width 0.3s ease;
 }
@@ -112,4 +112,10 @@
 .navbar-links a:active {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   outline: none;
+}
+
+.navbar-link.active,
+.contact-button.active {
+  border-bottom: 2px solid black;
+  padding-bottom: 0.2rem;
 }

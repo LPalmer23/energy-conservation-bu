@@ -1,5 +1,5 @@
 // src/components/NavBar.jsx
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import buLogo from "../assets/BUlogo.png";
 import "./NavBar.css";
 
@@ -11,17 +11,41 @@ export default function NavBar() {
       </div>
 
       <div className="navbar-links">
-        <Link to="/" className="navbar-link">Home</Link>
-        <Link to="/learnmore" className="navbar-link">Learn More</Link>
-        <Link to="/submit" className="navbar-link">Submit</Link>
-        <Link to="/charts" className="navbar-link">Charts</Link>
+        <NavLink
+          to="/"
+          className={({ isActive }) => isActive ? "navbar-link active" : "navbar-link"}
+        >
+          Home
+        </NavLink>
+        <NavLink
+          to="/learnmore"
+          className={({ isActive }) => isActive ? "navbar-link active" : "navbar-link"}
+        >
+          Learn More
+        </NavLink>
+        <NavLink
+          to="/submit"
+          className={({ isActive }) => isActive ? "navbar-link active" : "navbar-link"}
+        >
+          Submit
+        </NavLink>
+        <NavLink
+          to="/charts"
+          className={({ isActive }) => isActive ? "navbar-link active" : "navbar-link"}
+        >
+          Charts
+        </NavLink>
       </div>
 
       <div className="navbar-right">
-        <Link to="/contact" className="contact-button">CONTACT</Link>
+        <NavLink
+          to="/contact"
+          className={({ isActive }) => isActive ? "contact-button active" : "contact-button"}
+        >
+          CONTACT
+        </NavLink>
         <span className="search-icon">🔍</span>
       </div>
-
     </nav>
   );
 }
