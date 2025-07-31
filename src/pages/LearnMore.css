@@ -1,0 +1,112 @@
+.learn-more-wrapper {
+  background-color: #ffffff;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.hero-banner {
+  background-image: url('../assets/warren1.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 5rem 2rem;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.hero-banner::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.45); /* dark overlay */
+  z-index: 1;
+}
+
+.hero-text {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  margin: auto;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+}
+
+.learn-more-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  color: #1e1e1e;
+}
+
+.learn-more-container h2 {
+  font-size: 1.9rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  color: #005baa;
+  border-bottom: 2px solid #d8e6f7;
+  padding-bottom: 0.5rem;
+}
+
+.learn-more-container p {
+  font-size: 1.05rem;
+  margin-bottom: 1rem;
+}
+
+.learn-more-container ul {
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.bu-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+}
+
+.bu-section .bu-text {
+  flex: 1;
+}
+
+.bu-section .side-img {
+  width: 100%;
+  max-width: 380px;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+}
+
+.cta-section {
+  background: #eef6ff;
+  padding: 1.5rem 2rem;
+  margin-top: 3rem;
+  border-left: 6px solid #005baa;
+  border-radius: 6px;
+  font-weight: 500;
+  color: #003a70;
+  font-size: 1.05rem;
+}
+
+@media (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  .bu-section {
+    flex-direction: column;
+  }
+
+  .bu-section .side-img {
+    max-width: 100%;
+  }
+}

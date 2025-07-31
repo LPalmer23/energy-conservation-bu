@@ -1,0 +1,16 @@
+.charts-coming-soon {
+    text-align: center;
+    padding: 4rem 2rem;
+    font-family: 'Helvetica Neue', sans-serif;
+  }
+  
+  .charts-coming-soon h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .charts-coming-soon p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  

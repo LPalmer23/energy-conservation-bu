@@ -1,0 +1,115 @@
+/* NavBar.css */
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #ffffff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+/* Left: BU Logo */
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navbar-left img {
+  height: 44px;
+}
+
+/* Center: Links */
+.navbar-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  flex: 1;
+  justify-content: flex-start;
+  min-width: 0;
+  overflow-wrap: break-word;
+}
+
+/* Individual Link */
+.navbar-link {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #b10000;
+  transition: color 0.2s ease;
+  white-space: nowrap;
+}
+
+.navbar-link:hover {
+  color: #b10000;
+}
+
+/* Right: Contact & Search */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-shrink: 0;
+}
+
+.contact-button {
+  background-color: black;
+  color: white;
+  padding: 0.5rem 1.25rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: #333;
+}
+
+.search-icon {
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  position: relative;
+  padding: 0.25rem 0;
+  transition: all 0.3s ease;
+}
+
+/* Add underline hover effect */
+.navbar-links a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #000;
+  transition: width 0.3s ease;
+}
+
+/* On hover or focus, show underline */
+.navbar-links a:hover::after,
+.navbar-links a:focus::after {
+  width: 100%;
+}
+
+/* Optional: subtle glow or shadow when clicked */
+.navbar-links a:active {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  outline: none;
+}

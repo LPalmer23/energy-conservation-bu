@@ -1,0 +1,72 @@
+/* Full-page wrapper with background image set inline */
+.overlay-wrapper {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  font-family: 'Helvetica Neue', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Dark blur layer */
+.blur-background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  backdrop-filter: blur(12px);
+  background: rgba(0, 10, 30, 0.35);
+  z-index: 1;
+}
+
+/* Form box */
+.password-box {
+  position: relative;
+  background: rgba(255, 255, 255, 0.96);
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.25);
+  z-index: 2;
+  max-width: 500px;
+  width: 90%;
+  text-align: center;
+}
+
+.password-box h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: #222;
+}
+
+.password-box p {
+  font-size: 1.05rem;
+  color: #444;
+  margin-bottom: 1.4rem;
+}
+
+.password-box input {
+  padding: 0.8rem;
+  width: 100%;
+  max-width: 360px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  margin-bottom: 1.2rem;
+  background: #fff;
+}
+
+.password-box button {
+  background-color: #0061a8;
+  color: white;
+  border: none;
+  padding: 0.75rem 2.2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.25s ease;
+}
+
+.password-box button:hover {
+  background-color: #004e87;
+}
